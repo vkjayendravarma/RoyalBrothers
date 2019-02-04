@@ -1,0 +1,79 @@
+.highlites {
+    background-color: #f3f3f3;
+    padding: 2em;
+    @media screen and (max-width: 700px) {
+        padding: 0.5em;
+    }
+    .row {
+        width: 78%;
+        @media screen and (max-width: 700px) {
+            width: 95%;
+        }
+    }
+    .thumb {
+        text-align: left;
+        img {
+            background: #E3E1E1;
+            width: 202px;
+            height: 92px;
+            -webkit-box-shadow: 0px 0px 54px -16px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 54px -16px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 54px -16px rgba(0, 0, 0, 0.75);
+        }
+        .text {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+    }
+}
+
+.fleet {
+    .bikes {
+        width: 80%;
+        @media screen and (max-width: 700px) {
+            width: 100%;
+        }
+    }
+    .card {
+        width: 259px;
+        height: 168px;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #000000;
+        overflow-y: hidden;
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+        .text {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .more {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+footer {
+    background-color: #363636;
+    color: #ffffff;
+    .content {
+        width: 80%;
+        text-align: left;
+        img {
+            width: 68%;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
