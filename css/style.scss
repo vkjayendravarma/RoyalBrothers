@@ -1,51 +1,196 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-  
-body{
+// @import url('https://fonts.googleapis.com/css?family=Montserrat');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+@font-face {
+    font-family: "extrabold";
+    src: url("../fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "regular";
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'semibold';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
+
 .highlites {
     background-color: #f3f3f3;
-    padding: 2em;
+    padding: 4em 2em 4em 2em;
     @media screen and (max-width: 700px) {
-        padding: 0.5em;
+        padding: 0.5em 0.4em 2em 0.4em;
     }
     .row {
-        width: 78%;
+        width: 85%;
         @media screen and (max-width: 700px) {
-            width: 95%;
+            width: 100%;
         }
     }
     .thumb {
         text-align: left;
+        font-family: extrabold;
+        @media screen and (max-width: 700px) {
+            margin: 0 10px 10px 10px;
+            width: 170px;
+            height: 80px;
+            padding: 1em;
+        }
+        @media screen and (max-width: 410px) {
+            margin: 0 5px 5px 5px;
+            padding: 1em;
+            width: 150px;
+            height: 70px;
+        }
         img {
             background: #E3E1E1;
-            width: 202px;
-            height: 92px;
-            -webkit-box-shadow: 0px 0px 54px -16px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 0px 54px -16px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 0px 54px -16px rgba(0, 0, 0, 0.75);
+            width: 222px;
+            height: 82px;
+            @media screen and (max-width: 700px) {
+                margin-left: 0em;
+                margin-right: 0em;
+                width: 170px;
+                height: 80px;
+                display: inline-block;
+            }
+            @media screen and (max-width: 410px) {
+                margin-left: 0em;
+                margin-right: 0em;
+                width: 150px;
+                height: 70px;
+                display: inline-block;
+            }
+            -webkit-box-shadow: 0px 3px 9px -3px rgba(0,
+            0,
+            0,
+            0.89);
+            -moz-box-shadow: 0px 3px 9px -3px rgba(0,
+            0,
+            0,
+            0.89);
+            box-shadow: 0px 3px 9px -3px rgba(0,
+            0,
+            0,
+            0.89);
         }
         .text {
             position: absolute;
-            top: 8px;
-            left: 16px;
+            top: 50%;
+            left: 50%;
+            width: 222px;
+            height: auto;
+            transform: translate(-50%, -50%);
+            font-weight: 800;
+            font-size: 2em;
+            line-height: 0.7em;
+            @media screen and (max-width: 700px) {
+                position: absolute;
+                top: 90%;
+                left: 70%;
+                transform: translate(-50%, -50%);
+                width: 170px;
+                height: 80px;
+            }
+            @media screen and (max-width: 410px) {
+                position: absolute;
+                top: 90%;
+                left: 65%;
+                transform: translate(-50%, -50%);
+                width: 150px;
+                height: 70px;
+            }
+            span {
+                font-size: 10px !important;
+            }
+        }
+    }
+}
+
+.section_heading {
+    text-align: center;
+    font-family: "semibold";
+    padding-top: 1em
+}
+
+.speciality {
+    .special {
+        width: 75%;
+        @media screen and (max-width: 700px) {
+            width: 90%;
+        }
+        margin-top: 2em;
+        .card {
+            width: 240.5px;
+            height: 140px;
+            @media screen and (max-width: 700px) {
+                width: inherit;
+                height: inherit;
+            }
+        }
+        .number {
+            font-family: 'bold';
+            font-size: 4em;
+            color: #FECC00;
+            @media screen and (max-width: 700px) {
+                font-size: 3em;
+            }
+        }
+        .head {
+            font-family: 'bold';
+            font-size: 1.05em;
+            color: #000000;
+            text-align: left;
+            padding-top: 1.2em;
+            @media screen and (max-width: 700px) {
+                padding-top: 0.8em;
+            }
+        }
+        .body {
+            text-align: justify;
+            font-size: 0.8em;
         }
     }
 }
 
 .fleet {
+    background-color: #EEEEEE;
     .bikes {
-        width: 80%;
+        background-color: #ffffff;
+        width: 85%;
+        margin-top: 2em;
+        margin-bottom: 5em;
         @media screen and (max-width: 700px) {
-            width: 100%;
+            width: 85%;
+        }
+        .row {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        .col-md-3 {            
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
         }
     }
+   
     .card {
-        width: 259px;
-        height: 168px;
+        width: 100%;
+        height: auto;
         padding: 0;
-        margin: 0;
-        border: 1px solid #000000;
+        margin: 0 !important;
+        border-bottom: 7px solid #9E9E9E;
         overflow-y: hidden;
         .image {
             width: 100%;
@@ -56,12 +201,18 @@ body{
             top: 15%;
             left: 50%;
             transform: translate(-50%, -50%);
+            font-family: 'bold';
+            font-size: 0.9em;
+            width: 100%;
         }
         .more {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+           font-family: 'bold';
+           font-size: 1.1em;
+           color: #9E9E9E;
         }
     }
 }
