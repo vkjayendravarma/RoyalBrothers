@@ -7,8 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,6 +19,14 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container-fluid referance">
+        <a href="" class="inline ref">Refer Friends</a>
+        <span class="calll">
+            <a href="tel:+91-9019595595" class="inline call call1"><i class="fa fa-phone"></i>+91-9019595595</a>
+            <p class="inline seperater"> / </p>
+            <a href="tel:+91-7306747474" class="inline call cal2">+91-7306747474</a>
+        </span>
+    </div>
     <nav class="navbar navbar-default ">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -32,10 +42,10 @@
                 </div>
             </div>
 
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown padding">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#fff;">Bikes in
+            <div class="collapse navbar-collapse opac" id="navbar-collapse-1">
+                <ul class="nav navbar-nav location1">
+                    <li class="dropdown padding lo1">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" style="color:#fff;">Bikes in
                             Bangalore <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" class="white">Bikes in Agra</a></li>
@@ -49,26 +59,30 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="padding"><a href="#" class="white">Tarrif</a></li>
-                    <li class="padding"><a href="#" class="white">Package</a></li>
-                    <li class="padding"><a href="#" class="white">Bikes</a></li>
+                    <li class="padding"><a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff" class="white">Tarrif</a></li>
+                    <li class="padding"><a href="https://www.royalbrothers.com/bangalore/bike-rentals?page=home" class="white">Package</a></li>
+                    <li class="padding"><a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff" class="white">Bikes</a></li>
                     <li class="dropdown padding">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#fff;">Menu <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" class="white">Blog</a></li>
-                            <li><a href="#" class="white">FAQ</a></li>
-                            <li><a href="#" class="white">Privacy Policy</a></li>
-                            <li><a href="#" class="white">Terms & Conditions</a></li>
-                            <li><a href="#" class="white">Partner with us</a></li>
-                            <li><a href="#" class="white">Reach Us</a></li>
-                            <li><a href="#" class="white">About Us</a></li>
+                            <li><a href="https://www.royalbrothers.com/blog" class="white">Blog</a></li>
+                            <li><a href="https://www.royalbrothers.com/rides/rb-ride-2nd-anniversary" class="white">Rides</a></li>
+                            <li><a href="https://www.royalbrothers.com/bike-tour/manali-leh-manali" class="white">Bike
+                                    Tour</a></li>
+                            <li><a href="https://www.royalbrothers.com/faq" class="white">FAQ</a></li>
+                            <li><a href="https://www.royalbrothers.com/privacy-policy" class="white">Privacy Policy</a></li>
+                            <li><a href="https://www.royalbrothers.com/terms-and-conditions" class="white">Terms &
+                                    Conditions</a></li>
+                            <li><a href="https://www.royalbrothers.com/partner-with-us" class="white">Partner with us</a></li>
+                            <li><a href="https://www.royalbrothers.com/reach" class="white">Reach Us</a></li>
+                            <li><a href="https://www.royalbrothers.com/about" class="white">About Us</a></li>
                         </ul>
                     </li>
                     <li>
                         <ul class="nav navbar-nav auth">
-                            <li><a href="#" class="white">Sign up</a></li>
+                            <li><a href="https://www.royalbrothers.com/signup" class="white">Sign up</a></li>
                             <li class="seperator">|</li>
-                            <li><a href="#" class="white">Log in</a></li>
+                            <li><a href="https://www.royalbrothers.com/login" class="white">Log in</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -103,24 +117,34 @@
     <div class="highlites container-fluid">
         <center>
             <div class="row">
-                <div class="col-md-3 col-xs-6 thumb ">
-                    <img src="images/tumb/1.png" alt="Snow" ">
+                <div class="col-md-3 col-xs-6 thumb" id="cities">
+
+                    <img src="images/tumb/1.png" alt="cities">
                     <div class=" text">40 + <br><span>CITIES</span></div>
-            </div>
-            <div class="col-md-3 col-xs-6 thumb ">
-                <img src="images/tumb/2.png" alt="Snow" ">
+
+                </div>
+                <div class="col-md-3 col-xs-6 thumb " id="km">
+
+                    <img src="images/tumb/2.png" alt="KM">
                     <div class=" text">5 M <br><span>KILOMETERS</span></div>
-    </div>
-    <div class="col-md-3 col-xs-6 thumb ">
-        <img src="images/tumb/3.png" alt="Snow" ">
-                    <div class=" text">4.6 &#9733; <br><span>ON
-            FACEBOOK</span></div>
-    </div>
-    <div class="col-md-3 col-xs-6 thumb ">
-        <img src="images/tumb/4.png" alt="Snow" ">
+
+                </div>
+                <div class="col-md-3 col-xs-6 thumb" id="fb">
+                    <a href="https://www.facebook.com/royalbrothersindia/" target="_blank"><img src="images/tumb/3.png"
+                            alt="FB" ">
+                        <div class=" text">4.6
+                        &#9733; <br><span>ON
+                            FACEBOOK</span></div></a>
+
+            </div>
+            <div class="col-md-3 col-xs-6 thumb" id="g">
+                <a href="https://www.google.co.in/search?q=royalbrothers+indiranagar&oq=royalbrothers+indiranagar"
+                    target="_blank"><img src="images/tumb/4.png" alt="G+">
                     <div class=" text">4.5 &#9733; <br><span>ON
-            GOOGLE</span></div>
-    </div>
+                            GOOGLE</span></div>
+                </a>
+
+            </div>
     </div>
     </center>
     </div>
@@ -129,34 +153,34 @@
         <h2 class="section_heading">OUR SPECIALITY</h2>
         <center>
             <div class="row special">
-                <div class="col-md-3 col-xs-6 card">
+                <div class="col-md-3 col-xs-6 col-sm-3 card">
                     <div class="row">
-                        <div class="col-md-2 col-xs-2 number">1</div>
-                        <div class="col-md-10 col-xs-10 head">First RTO Authorized bike rental
+                        <div class="col-md-2 col-xs-2 col-sm-2 number">1</div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 head">First RTO Authorized bike rental
                         </div>
-                        <div class="col-md-12 col-xs-12 body">Pioneers in renting out bikes legally in Andhra Pradesh
+                        <div class="col-md-12 col-xs-12 col-sm-12 body">Pioneers in renting out bikes legally in Andhra Pradesh
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 card">
+                <div class="col-md-3 col-xs-6 col-sm-3 card">
                     <div class="row">
-                        <div class="col-md-2 col-xs-2 number">2</div>
-                        <div class="col-md-10 col-xs-10 head">Bikes in top notch conditions
+                        <div class="col-md-2 col-xs-2 col-sm-2 number">2</div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 head">Bikes in top notch conditions
                         </div>
-                        <div class="col-md-12 col-xs-12 body">Each bike is cleaned and serviced weekly and also once
+                        <div class="col-md-12 col-xs-12 col-sm-12 body">Each bike is cleaned and serviced weekly and also once
                             before
                             renting out.
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 card">
+                <div class="col-md-3 col-xs-6 col-sm-3 card">
                     <div class="row">
-                        <div class="col-md-2 col-xs-2 number">3</div>
-                        <div class="col-md-10 col-xs-10 head">Timely pick up and drop off
+                        <div class="col-md-2 col-xs-2 col-sm-2 number">3</div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 head">Timely pick up and drop off
                         </div>
-                        <div class="col-md-12 col-xs-12 body">If we delay even by 15 mins, ₹ 25 on scooter and ₹50 on
+                        <div class="col-md-12 col-xs-12 col-sm-12 body">If we delay even by 15 mins, ₹ 25 on scooter and ₹50 on
                             bikes
                             will be
                             refunded.
@@ -164,52 +188,52 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 card">
+                <div class="col-md-3 col-xs-6 col-sm-3 card">
                     <div class="row">
-                        <div class="col-md-2 col-xs-2 number">4</div>
-                        <div class="col-md-10 col-xs-10 head">Home delivery on weekdays*
+                        <div class="col-md-2 col-xs-2 col-sm-2 number">4</div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 head">Home delivery on weekdays*
                         </div>
-                        <div class="col-md-12 col-xs-12 body">Now avail our service and get the key to happiness at
+                        <div class="col-md-12 col-xs-12 col-sm-12 body">Now avail our service and get the key to happiness at
                             your doorstep.
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 card">
+                <div class="col-md-3 col-xs-6 col-sm-3 card">
                     <div class="row">
-                        <div class="col-md-2 col-xs-2 number">5</div>
-                        <div class="col-md-10 col-xs-10 head">Commercial Insurance is covered
+                        <div class="col-md-2 col-xs-2 col-sm-2 number">5</div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 head">Commercial Insurance is covered
                         </div>
-                        <div class="col-md-12 col-xs-12 body">We have a valid commercial insurance for the rider,
+                        <div class="col-md-12 col-xs-12 col-sm-12 body">We have a valid commercial insurance for the rider,
                             pillion and third party
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 card">
+                <div class="col-md-3 col-xs-6 col-sm-3 card">
                     <div class="row">
-                        <div class="col-md-2 col-xs-2 number">6</div>
-                        <div class="col-md-10 col-xs-10 head">Most trusted & transparent process
+                        <div class="col-md-2 col-xs-2 col-sm-2 number">6</div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 head">Most trusted & transparent process
                         </div>
-                        <div class="col-md-12 col-xs-12 body">We are upfront about the entire process of renting a bike
+                        <div class="col-md-12 col-xs-12 col-sm-12 body">We are upfront about the entire process of renting a bike
                             from us
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 card">
+                <div class="col-md-3 col-xs-6 col-sm-3 card">
                     <div class="row">
-                        <div class="col-md-2 col-xs-2 number">7</div>
-                        <div class="col-md-10 col-xs-10 head">19 pickup locations in Bangalore
+                        <div class="col-md-2 col-xs-2 col-sm-2 number">7</div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 head">19 pickup locations in Bangalore
                         </div>
-                        <div class="col-md-12 col-xs-12 body">
+                        <div class="col-md-12 col-xs-12 col-sm-12 body">
                             There are good chances you will find us in 3 km radius from your location
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 card">
+                <div class="col-md-3 col-xs-6 col-sm-3 card">
                     <div class="row">
-                        <div class="col-md-2 col-xs-2 number">8</div>
-                        <div class="col-md-10 col-xs-10 head">Choose from a wide variety of bikes
+                        <div class="col-md-2 col-xs-2 col-sm-2 number">8</div>
+                        <div class="col-md-10 col-xs-10 col-sm-10 head">Choose from a wide variety of bikes
                         </div>
-                        <div class="col-md-12 col-xs-12 body">
+                        <div class="col-md-12 col-xs-12 col-sm-12 body">
                             Pick a bike that suits your need from scooters to superbikes.
                         </div>
                     </div>
@@ -224,99 +248,123 @@
         <h2 class="section_heading">OUR FLEET</h2>
         <center>
             <div class="row bikes">
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3 ">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/triumph-street-twin.png" alt="Triumph" class="image">
-                            <div class="text">Triumph Street Twin</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/triumph-street-twin.png" alt="Triumph" class="image">
+                                <div class="text">Triumph Street Twin</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/benelli-tnt-600-i.png" alt="Benelli TNT 600 i" class="image">
-                            <div class="text">Benelli TNT 600 i</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/benelli-tnt-600-i.png" alt="Benelli TNT 600 i" class="image">
+                                <div class="text">Benelli TNT 600 i</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/iron_883.png" alt="Harley Davidson Iron 883" class="image">
-                            <div class="text">Harley Davidson Iron 883</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/iron_883.png" alt="Harley Davidson Iron 883" class="image">
+                                <div class="text">Harley Davidson Iron 883</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/royal-enfield-redditch.png" alt="Classic 350" class="image">
-                            <div class="text">Classic 350</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/royal-enfield-redditch.png" alt="Classic 350" class="image">
+                                <div class="text">Classic 350</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/royal-enfield-himalayan.png" alt=" Himalayan" class="image">
-                            <div class="text"> Himalayan </div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/royal-enfield-himalayan.png" alt=" Himalayan" class="image">
+                                <div class="text"> Himalayan </div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/dominar.png" alt="Dominar 400" class="image">
-                            <div class="text">Dominar 400</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/dominar.png" alt="Dominar 400" class="image">
+                                <div class="text">Dominar 400</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/Avenger-Cruise-220.png" alt="Avenger Cruise 220" class="image">
-                            <div class="text">Avenger Cruise 220</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/Avenger-Cruise-220.png" alt="Avenger Cruise 220" class="image">
+                                <div class="text">Avenger Cruise 220</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/Activa.png" alt="Activa" class="image">
-                            <div class="text">Activa</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"> <img src="images/bikes/Activa.png" alt="Activa" class="image">
+                                <div class="text">Activa</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/Classic-350-half.png" alt="Classic 350" class="image">
-                            <div class="text">Classic 350</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/Classic-350-half.png" alt="Classic 350" class="image">
+                                <div class="text">Classic 350</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/fz.png" alt="Yamaha FZ" class="image">
-                            <div class="text">Yamaha FZ</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/fz.png" alt="Yamaha FZ" class="image">
+                                <div class="text">Yamaha FZ</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 ">
+                <div class="col-md-3 col-sm-3">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/Duke-200.png" alt="Duke 200" class="image">
-                            <div class="text">Duke 200</div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/Duke-200.png" alt="Duke 200" class="image">
+                                <div class="text">Duke 200</div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
-                <div class="col-md-3 morebikes">
+                <div class="col-md-3 col-sm-3 morebikes">
                     <center>
                         <div class="card">
-                            <img src="images/bikes/blank.png" alt="Blank" class="image">
-                            <div class="more">See more <b class="caret"></b></div>
+                            <a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff"><img src="images/bikes/blank.png" alt="Blank" class="image">
+                                <div class="more">See more <b class="caret"></b></div>
+                            </a>
+
                         </div>
                     </center>
                 </div>
@@ -328,10 +376,10 @@
     <div class="container-fluid parthners">
         <center>
             <div class="row">
-                <div class="col-md-3"> <img src="images/partners/Your-story.png" alt="Your-story"></div>
-                <div class="col-md-3"><img src="images/partners/TOI.png" alt="Times of India"></div>
-                <div class="col-md-3"><img src="images/partners/TET.png" alt="The Economic Times"></div>
-                <div class="col-md-3"><img src="images/partners/TH.png" alt="The Hindu"></div>
+                <div class="col-md-3 col-xs-6 col-sm-3"><a href="https://yourstory.com/2016/08/royal-brothers/"> <img src="images/partners/Your-story.png" alt="Your-story"></a></div>
+                <div class="col-md-3 col-xs-6 col-sm-3"><a href="http://timesofindia.indiatimes.com/business/india-business/Bike-rental-startups-fuel-a-new-passion/articleshow/49613993.cms"><img src="images/partners/TOI.png" alt="Times of India"></a></div>
+                <div class="col-md-3 col-xs-6 col-sm-3"><a href="http://epaperbeta.timesofindia.com/Article.aspx?eid=31815&articlexml=Hitchhike-is-Pass%C3%A9-Hire-a-Bike-Instead-02072015002036"><img src="images/partners/TET.png" alt="The Economic Times"></a></div>
+                <div class="col-md-3 col-xs-6 col-sm-3"><a href="http://www.thehindu.com/news/national/karnataka/rent-a-bike-savour-the-city/article7903765.ece"><img src="images/partners/TH.png" alt="The Hindu"></a></div>
             </div>
         </center>
 
@@ -341,38 +389,40 @@
     <footer class="container-fluid">
         <center>
             <div class="row content">
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-4">
                     <img src="images/logo/logo.png" alt="logo">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-3">
                     <div class="heading">COMPANY</div>
-                    <ul>
-                        <li>FAQ</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
+                    <ul class="normal">
+                        <li><a href="https://www.royalbrothers.com/faq">FAQ</a></li>
+                        <li><a href="https://www.royalbrothers.com/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://www.royalbrothers.com/terms-and-conditions">Terms & Conditions</a></li>                
                     </ul>
                 </div>
-                <div class="col-md-2">
-                    <ul>
-                        <li>Tariff</li>
-                        <li>Partner with us</li>
-                        <li>Reach Us</li>
-                        <li>About Us</li>
-                        <li>Sitemap</li>
+                <div class="col-md-2 col-sm-2">
+                    <ul class="padded">
+                        <li><a href="https://www.royalbrothers.com/bangalore/bike-rentals/tariff">Tariff</a></li>
+                        <li><a href="https://www.royalbrothers.com/partner-with-us">Partner with us</a></li>
+                        <li><a href="https://www.royalbrothers.com/reach">Reach Us</a></li>
+                        <li><a href="https://www.royalbrothers.com/about">About Us</a></li>
+                        <li><a href="https://www.royalbrothers.com/sitemap">Sitemap</a></li>                        
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-3">
                     <div class="heading">FOLLOW</div>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>Linkedin</li>
+                    <ul class="normal">
+                        <li><a href="https://www.facebook.com/royalbrothersindia/">Facebook</a></li>
+                        <li><a href="https://twitter.com/royalbrothersin">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/royalbrothersrentals/">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/royal-brothers">Linkedin</a></li>                        
                     </ul>
                 </div>
             </div>
 
         </center>
+        <div class="copyrights">© Copyright 2019 Royalbison AutoRentals India Private Ltd. All rights reserved.
+        </div>
     </footer>
 
 

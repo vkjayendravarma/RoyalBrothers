@@ -1,6 +1,11 @@
 .white{
     color: #ffffff !important;
 }
+.opac{
+    a:hover{
+        opacity: 0.9;
+    }
+}
 .navbar-brand {
     width: 200px;
     height: 50px;
@@ -40,6 +45,12 @@
     padding: 0;
     margin: 0;
     border: none;
+    .active{
+        background-color: #000000 !important;
+    }
+    a:visited{
+        background: #000000 !important;
+    }
 
     .padding {
         color: #ffffff;
@@ -94,7 +105,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 760px) {
     .navbar-nav {
         display: inline;
     }
@@ -132,7 +143,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 761px) {
     ul.nav li:hover>ul.dropdown-menu {
         display: block;
     }

@@ -1,5 +1,3 @@
-// @import url('https://fonts.googleapis.com/css?family=Montserrat');
-// @import url('https://fonts.googleapis.com/css?family=Montserrat:800');
 @font-face {
     font-family: "extrabold";
     src: url("../fonts/Montserrat-ExtraBold.ttf");
@@ -21,7 +19,54 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "regular";
+}
+
+.referance{
+    background-color: #3f3e3e;
+    padding: 0.3em;
+    margin-right: 0;
+    margin-left: 0;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: right;
+    @media screen and (max-width:700px) {
+        text-align: left;
+        font-size: 0.8em;
+        padding: 0.6em;
+    }
+    .inline{
+        display: inline;
+    }
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        opacity: 1;       
+    }
+    a:hover{
+        opacity: 0.95;
+    }
+    a:active{
+        opacity: 0.5;
+    }
+    .ref{
+        @media screen and (max-width:700px) {
+            position: relative;
+            left: 0%;
+        }
+    }
+    .calll{
+        .fa{
+            margin-right: 4px;
+            margin-left: 1em;
+        }
+        @media screen and (max-width:700px){
+            position: absolute;
+            right: 0;
+            
+        }
+        
+    }
 }
 
 .highlites {
@@ -30,11 +75,19 @@ body {
     @media screen and (max-width: 700px) {
         padding: 0.5em 0.4em 2em 0.4em;
     }
+      
+   
     .row {
         width: 85%;
         @media screen and (max-width: 700px) {
             width: 100%;
         }
+        @media screen and (min-width: 980px) and (max-width:1090px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 750px) and (max-width:800px) {
+            width: 70%;
+         } 
     }
     .thumb {
         text-align: left;
@@ -45,12 +98,21 @@ body {
             height: 80px;
             padding: 1em;
         }
+        @media screen and (min-width: 750px) and (max-width:800px) {
+            padding: 0.5em;
+        }        
         @media screen and (max-width: 410px) {
             margin: 0 5px 5px 5px;
             padding: 1em;
             width: 150px;
             height: 70px;
         }
+        @media screen and (max-width: 350px) {
+            width: 130px;
+            height: 70px;
+            display: inline-block;
+        }
+       
         img {
             background: #E3E1E1;
             width: 222px;
@@ -66,6 +128,13 @@ body {
                 margin-left: 0em;
                 margin-right: 0em;
                 width: 150px;
+                height: 70px;
+                display: inline-block;
+            }
+            @media screen and (max-width: 350px) {
+                margin-left: 0em;
+                margin-right: 0em;
+                width: 130px;
                 height: 70px;
                 display: inline-block;
             }
@@ -92,6 +161,8 @@ body {
             font-weight: 800;
             font-size: 2em;
             line-height: 0.7em;
+            color:#000000;
+            text-decoration: none !important;
             @media screen and (max-width: 700px) {
                 position: absolute;
                 top: 90%;
@@ -108,6 +179,18 @@ body {
                 width: 150px;
                 height: 70px;
             }
+            @media screen and (max-width: 350px) {        
+                width: 130px;
+                height: 70px;
+                display: inline-block;                
+            }
+            @media screen and (min-width: 980px) and (max-width:1090px) {
+                position: absolute;
+                top: 50%;
+                left: 65%;
+                transform: translate(-50%, -50%);
+            }
+            
             span {
                 font-size: 10px !important;
             }
@@ -122,6 +205,7 @@ body {
 }
 
 .speciality {
+    padding-bottom: 4em;
     .special {
         width: 75%;
         @media screen and (max-width: 700px) {
@@ -135,6 +219,7 @@ body {
                 width: inherit;
                 height: inherit;
             }
+          
         }
         .number {
             font-family: 'bold';
@@ -167,7 +252,7 @@ body {
         background-color: #ffffff;
         width: 85%;
         margin-top: 2em;
-        margin-bottom: 5em;
+        margin-bottom: 2em;
         @media screen and (max-width: 700px) {
             width: 85%;
         }
@@ -195,6 +280,8 @@ body {
         .image {
             width: 100%;
             height: 100%;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
         }
         .text {
             position: absolute;
@@ -204,6 +291,7 @@ body {
             font-family: 'bold';
             font-size: 0.9em;
             width: 100%;
+            color: #000000;
         }
         .more {
            position: absolute;
@@ -217,19 +305,92 @@ body {
     }
 }
 
+.parthners{
+    background-color: #eeeeee;
+    padding-bottom: 2em;
+    .row{
+        width:75%;
+        @media screen and (max-width:700px) {
+            width: 100%;
+        }
+        img{
+           width: 80%;
+           height: auto;
+           @media screen and (max-width:700px) {
+               width: 100%;
+               height: auto;
+           }
+        }
+    }
+}
+
 footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    @media screen and (max-width:700px) {
+        padding: 0;
+    }
     background-color: #363636;
     color: #ffffff;
     .content {
         width: 80%;
+        padding-bottom: 2em;
+        @media screen and (max-width:700px) {
+            width: 100%;
+        }
         text-align: left;
         img {
             width: 68%;
+            @media screen and (max-width:700px) {
+                width: 100%;
+                margin: 3em 0em 3em 0em;
+            }
+            @media screen and (min-width:760px) and (max-width:1050px) {
+                width: 90%;
+                margin: 1em 0em 1em 0em;
+            }
         }
         ul {
+            color: rgba(255, 255, 255, 0.8);
             list-style-type: none;
             padding: 0;
             margin: 0;
+            font-family: 'regular';
+            font-size: 0.9em;
+            font-weight: 500;
+            li{
+                padding: 0.2em;
+            }
+            a{
+                color: rgba(255, 255, 255, 0.8);
+                text-decoration: none !important;  
+            }
+        }
+        .heading{
+            font-family: 'bold';
+            font-size: 2em;
+            @media screen and (min-width:760px) and (max-width:1050px) {
+                font-size: 1.5em;
+            }
+        }
+        .normal{
+            margin-top: 0.5em;
+        }
+        .padded{
+            @media screen and (min-width:700px) {
+                margin-top: 5em;
+            }
+        }
+    }
+
+    .copyrights{
+        font-family: 'regular';
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding-bottom: 0.5em;
+        @media screen and (max-width:700px) {
+            margin-top: 2em;
+            padding-bottom: 1em;
         }
     }
 }
