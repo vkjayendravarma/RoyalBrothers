@@ -2,13 +2,19 @@ const preCacheName = "pre-cache-calc",
     preCacheFiles = [
         "/",
         "/index.html",
-        "/fonts/*",
         "css/navbar.css",
         "css/style.css",
         "css/vendor.css",
         "css/bootstrap.min.css",
-        "images/carosel/*",
-        "js/*"       
+        "images/carosel/1.jpg",
+        "images/carosel/1.png",
+        "images/carosel/2.jpg",
+        "images/carosel/2.png",
+        "images/logo/logo small.png",
+        "images/logo/logo.png",
+        "js/bootstrap.min.js" ,
+        "js/jquery.min.js",
+        "js/location.js"      
     ];
 
 
